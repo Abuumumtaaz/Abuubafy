@@ -216,6 +216,7 @@ a {
     width: 40px;
     height: 40px;
     
+    
 }
 .iconn {
     background-color: #918ca4;
@@ -229,10 +230,7 @@ a {
     width: 30px;
     height: 30px;
   }
-  
-  .icon--primary {
-    fill: var(--color-primary);
-  }
+
   
   .icon--white {
     fill: #fff;
@@ -780,3 +778,26 @@ a {
   }
 
   
+/* Features */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
